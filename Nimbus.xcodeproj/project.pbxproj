@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04CD712F1FC9BA5A50CCCC34 /* FileSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF876259CB7C33684DFF50C3 /* FileSearch.swift */; };
+		0E558138D5061709340A498F /* ShortcutsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB283021CD589BF70B3E9AFF /* ShortcutsManager.swift */; };
+		0EE29072AF089EE154E2DC31 /* BatchOperationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CA742270697FE2600EF1E7 /* BatchOperationsService.swift */; };
 		1C268DB5237F86370CB20D24 /* GoogleDriveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED97D87D5BF6281AF72F466 /* GoogleDriveService.swift */; };
 		1D3E03BCC64A52A469FF1729 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 3F4079735B3FBA9410AD3AA6 /* SQLite */; };
 		3E0E8F68C722A0E0ECD2FBA1 /* FileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11947DFDFFC7C4250E7E94E8 /* FileListView.swift */; };
@@ -16,6 +18,7 @@
 		750AF9FDE10F2C6136EB9FDE /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8390FC5B5A0E3998F208A8 /* SettingsStore.swift */; };
 		856BA56F6BA44A6FCBA25D3C /* StatusPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8C937F10797715C1B3861 /* StatusPopoverView.swift */; };
 		8A24FC3E7C3C58C161EE27C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8599DCB59873073B1B6CDAE5 /* AppDelegate.swift */; };
+		9F35703242E960EBCC994B35 /* iCloudSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D826B699F7297E49E25F3F /* iCloudSyncManager.swift */; };
 		CCF593FF4CA913044B4AC06A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD46897E92A3938AC3871E1F /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,14 +26,17 @@
 		11947DFDFFC7C4250E7E94E8 /* FileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListView.swift; sourceTree = "<group>"; };
 		135FBACBE64A0070714BC027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		217BB5D7B7AB09C29E956C82 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		26D826B699F7297E49E25F3F /* iCloudSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudSyncManager.swift; sourceTree = "<group>"; };
 		3C2FF336F7323A4835E2D6B0 /* Nimbus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nimbus.entitlements; sourceTree = "<group>"; };
 		8599DCB59873073B1B6CDAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD46897E92A3938AC3871E1F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AED97D87D5BF6281AF72F466 /* GoogleDriveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDriveService.swift; sourceTree = "<group>"; };
 		C7B8C937F10797715C1B3861 /* StatusPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusPopoverView.swift; sourceTree = "<group>"; };
 		CF8390FC5B5A0E3998F208A8 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		D0CA742270697FE2600EF1E7 /* BatchOperationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchOperationsService.swift; sourceTree = "<group>"; };
 		D2765A4CFF808628E32AA17B /* Nimbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nimbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF876259CB7C33684DFF50C3 /* FileSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSearch.swift; sourceTree = "<group>"; };
+		FB283021CD589BF70B3E9AFF /* ShortcutsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +65,19 @@
 				CF8390FC5B5A0E3998F208A8 /* SettingsStore.swift */,
 				C7B8C937F10797715C1B3861 /* StatusPopoverView.swift */,
 				217BB5D7B7AB09C29E956C82 /* Theme.swift */,
+				4BB0B58F737813EDE8051A2B /* Services */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		4BB0B58F737813EDE8051A2B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D0CA742270697FE2600EF1E7 /* BatchOperationsService.swift */,
+				26D826B699F7297E49E25F3F /* iCloudSyncManager.swift */,
+				FB283021CD589BF70B3E9AFF /* ShortcutsManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		617866E59968FDC96CC1252C = {
@@ -144,12 +161,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A24FC3E7C3C58C161EE27C6 /* AppDelegate.swift in Sources */,
+				0EE29072AF089EE154E2DC31 /* BatchOperationsService.swift in Sources */,
 				3E0E8F68C722A0E0ECD2FBA1 /* FileListView.swift in Sources */,
 				04CD712F1FC9BA5A50CCCC34 /* FileSearch.swift in Sources */,
 				1C268DB5237F86370CB20D24 /* GoogleDriveService.swift in Sources */,
 				750AF9FDE10F2C6136EB9FDE /* SettingsStore.swift in Sources */,
+				0E558138D5061709340A498F /* ShortcutsManager.swift in Sources */,
 				856BA56F6BA44A6FCBA25D3C /* StatusPopoverView.swift in Sources */,
 				73A300B5094556C8D1124B48 /* Theme.swift in Sources */,
+				9F35703242E960EBCC994B35 /* iCloudSyncManager.swift in Sources */,
 				CCF593FF4CA913044B4AC06A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

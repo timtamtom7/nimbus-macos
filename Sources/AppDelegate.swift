@@ -100,3 +100,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 }
+
+// MARK: - NimbusState
+
+@MainActor
+final class NimbusState {
+    static let shared = NimbusState()
+
+    var recentFiles: [DriveFile] = []
+    var favorites: [String] = []
+
+    private init() {}
+
+    func searchFiles(query: String) -> [DriveFile] {
+        // Search is done through GoogleDriveService
+        return []
+    }
+
+    func getRecentFiles(limit: Int) -> [DriveFile] {
+        return Array(recentFiles.prefix(limit))
+    }
+}
+

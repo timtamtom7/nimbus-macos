@@ -74,6 +74,20 @@ struct GoogleDriveFile: Codable {
     let parents: [String]?
     let webContentLink: String?
     let webViewLink: String?
+    var starred: Bool?
+
+    init(id: String = "", name: String, mimeType: String, size: Int64? = nil, modifiedTime: String? = nil, createdTime: String? = nil, parents: [String]? = nil, webContentLink: String? = nil, webViewLink: String? = nil, starred: Bool? = nil) {
+        self.id = id
+        self.name = name
+        self.mimeType = mimeType
+        self.size = size
+        self.modifiedTime = modifiedTime
+        self.createdTime = createdTime
+        self.parents = parents
+        self.webContentLink = webContentLink
+        self.webViewLink = webViewLink
+        self.starred = starred
+    }
 }
 
 struct DriveQuota: Codable {
@@ -438,6 +452,93 @@ class GoogleDriveService: ObservableObject {
                     }
                 }
             }
+        }
+    }
+
+    // MARK: - Batch Operations (R5)
+
+    func moveFile(fileId: String, toFolderId: String) async throws {
+        guard let accessToken = accessToken else { throw DriveError.notAuthenticated }
+
+        let metadata = ["parents": [toFolderId]]
+        let body = try JSONEncoder().encode(metadata)
+
+        var request = URLRequest(url: URL(string: "https://www.googleapis.com/drive/v3/files/\(fileId)?addParents=\(toFolderId)")!)
+        request.httpMethod = "PATCH"
+        request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = body
+
+        let (_, response) = try await URLSession.shared.data(for: request)
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            throw DriveError.downloadFailed
+        }
+    }
+
+    func copyFile(fileId: String, toFolderId: String) async throws {
+        guard let accessToken = accessToken else { throw DriveError.notAuthenticated }
+
+        let metadata = GoogleDriveFile(name: "", mimeType: "", parents: [toFolderId])
+        let body = try JSONEncoder().encode(metadata)
+
+        var request = URLRequest(url: URL(string: "https://www.googleapis.com/drive/v3/files/\(fileId)/copy")!)
+        request.httpMethod = "POST"
+        request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = body
+
+        let (_, response) = try await URLSession.shared.data(for: request)
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            throw DriveError.downloadFailed
+        }
+    }
+
+    func deleteFile(fileId: String) async throws {
+        guard let accessToken = accessToken else { throw DriveError.notAuthenticated }
+
+        var request = URLRequest(url: URL(string: "https://www.googleapis.com/drive/v3/files/\(fileId)")!)
+        request.httpMethod = "DELETE"
+        request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
+
+        let (_, response) = try await URLSession.shared.data(for: request)
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 204 || httpResponse.statusCode == 200 else {
+            throw DriveError.downloadFailed
+        }
+    }
+
+    func renameFile(fileId: String, newName: String) async throws {
+        guard let accessToken = accessToken else { throw DriveError.notAuthenticated }
+
+        let metadata = GoogleDriveFile(name: newName, mimeType: "")
+        let body = try JSONEncoder().encode(metadata)
+
+        var request = URLRequest(url: URL(string: "https://www.googleapis.com/drive/v3/files/\(fileId)")!)
+        request.httpMethod = "PATCH"
+        request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = body
+
+        let (_, response) = try await URLSession.shared.data(for: request)
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            throw DriveError.downloadFailed
+        }
+    }
+
+    func starFile(fileId: String, starred: Bool) async throws {
+        guard let accessToken = accessToken else { throw DriveError.notAuthenticated }
+
+        let metadata = GoogleDriveFile(name: "", mimeType: "", starred: starred)
+        let body = try JSONEncoder().encode(metadata)
+
+        var request = URLRequest(url: URL(string: "https://www.googleapis.com/drive/v3/files/\(fileId)")!)
+        request.httpMethod = "PATCH"
+        request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = body
+
+        let (_, response) = try await URLSession.shared.data(for: request)
+        guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
+            throw DriveError.downloadFailed
         }
     }
 }
