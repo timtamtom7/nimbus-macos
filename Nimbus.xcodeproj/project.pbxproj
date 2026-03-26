@@ -12,8 +12,10 @@
 		0EE29072AF089EE154E2DC31 /* BatchOperationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CA742270697FE2600EF1E7 /* BatchOperationsService.swift */; };
 		1C268DB5237F86370CB20D24 /* GoogleDriveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED97D87D5BF6281AF72F466 /* GoogleDriveService.swift */; };
 		1D3E03BCC64A52A469FF1729 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 3F4079735B3FBA9410AD3AA6 /* SQLite */; };
+		2D62B6CACF8305ADB1800B71 /* EnterpriseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C8348B30BA1E1617339528 /* EnterpriseService.swift */; };
 		3E0E8F68C722A0E0ECD2FBA1 /* FileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11947DFDFFC7C4250E7E94E8 /* FileListView.swift */; };
 		5788B71E4454498F08D8F107 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 41474ABB3397AF3F8E0CB5DF /* KeychainAccess */; };
+		5815DE726C4C13B0FE9292A5 /* CollaborationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4797C6E2CE5DCD9CFE3389C4 /* CollaborationService.swift */; };
 		73A300B5094556C8D1124B48 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217BB5D7B7AB09C29E956C82 /* Theme.swift */; };
 		750AF9FDE10F2C6136EB9FDE /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8390FC5B5A0E3998F208A8 /* SettingsStore.swift */; };
 		856BA56F6BA44A6FCBA25D3C /* StatusPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8C937F10797715C1B3861 /* StatusPopoverView.swift */; };
@@ -22,6 +24,7 @@
 		A90500BD2CC53BDF7608AB04 /* FavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F585FF7B8E4D840A1AE33FF /* FavoritesManager.swift */; };
 		ADEEFFB6A045390D5ADE3CA6 /* SmartPaste.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FEC6C1C873BB165CED171B /* SmartPaste.swift */; };
 		CCF593FF4CA913044B4AC06A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD46897E92A3938AC3871E1F /* main.swift */; };
+		D058AEC24B54FBCD8DEA9B10 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCEAD2717DFE9486D02E4E6 /* APIService.swift */; };
 		DC3ED052B25A95CC20B34609 /* CloudIntelligenceEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C64AD9D3E29B1A1E4F24A /* CloudIntelligenceEngine.swift */; };
 		DE7D96BD838EA5ABDAFE76D5 /* NimbusExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DF27635C407D1261FFDB5F /* NimbusExport.swift */; };
 		E1210CD66EAC90F1432C3D6B /* Nimbus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2190D7A1A8842B3AF8DB2378 /* Nimbus.swift */; };
@@ -38,11 +41,14 @@
 		2190D7A1A8842B3AF8DB2378 /* Nimbus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nimbus.swift; sourceTree = "<group>"; };
 		26D826B699F7297E49E25F3F /* iCloudSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudSyncManager.swift; sourceTree = "<group>"; };
 		3C2FF336F7323A4835E2D6B0 /* Nimbus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nimbus.entitlements; sourceTree = "<group>"; };
+		4797C6E2CE5DCD9CFE3389C4 /* CollaborationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaborationService.swift; sourceTree = "<group>"; };
+		60C8348B30BA1E1617339528 /* EnterpriseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseService.swift; sourceTree = "<group>"; };
 		8599DCB59873073B1B6CDAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B6F0C48AEAD198B405C3425 /* ImageClipboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClipboard.swift; sourceTree = "<group>"; };
 		A9DBB69415BFEFE3E1537CAA /* AccessibilityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityExtensions.swift; sourceTree = "<group>"; };
 		AD46897E92A3938AC3871E1F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AED97D87D5BF6281AF72F466 /* GoogleDriveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDriveService.swift; sourceTree = "<group>"; };
+		AFCEAD2717DFE9486D02E4E6 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		B4FEC6C1C873BB165CED171B /* SmartPaste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartPaste.swift; sourceTree = "<group>"; };
 		C7B8C937F10797715C1B3861 /* StatusPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusPopoverView.swift; sourceTree = "<group>"; };
 		CF8390FC5B5A0E3998F208A8 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
@@ -97,7 +103,10 @@
 		4BB0B58F737813EDE8051A2B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AFCEAD2717DFE9486D02E4E6 /* APIService.swift */,
 				D0CA742270697FE2600EF1E7 /* BatchOperationsService.swift */,
+				4797C6E2CE5DCD9CFE3389C4 /* CollaborationService.swift */,
+				60C8348B30BA1E1617339528 /* EnterpriseService.swift */,
 				26D826B699F7297E49E25F3F /* iCloudSyncManager.swift */,
 				FB283021CD589BF70B3E9AFF /* ShortcutsManager.swift */,
 			);
@@ -192,11 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D058AEC24B54FBCD8DEA9B10 /* APIService.swift in Sources */,
 				EFC816697F2CDEACEBF500F3 /* AccessibilityExtensions.swift in Sources */,
 				8A24FC3E7C3C58C161EE27C6 /* AppDelegate.swift in Sources */,
 				0EE29072AF089EE154E2DC31 /* BatchOperationsService.swift in Sources */,
 				EC872B965B6F35EB1AEB6CE7 /* ClipboardSync.swift in Sources */,
 				DC3ED052B25A95CC20B34609 /* CloudIntelligenceEngine.swift in Sources */,
+				5815DE726C4C13B0FE9292A5 /* CollaborationService.swift in Sources */,
+				2D62B6CACF8305ADB1800B71 /* EnterpriseService.swift in Sources */,
 				A90500BD2CC53BDF7608AB04 /* FavoritesManager.swift in Sources */,
 				3E0E8F68C722A0E0ECD2FBA1 /* FileListView.swift in Sources */,
 				04CD712F1FC9BA5A50CCCC34 /* FileSearch.swift in Sources */,
