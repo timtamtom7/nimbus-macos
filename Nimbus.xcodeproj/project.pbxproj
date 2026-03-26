@@ -12,8 +12,11 @@
 		0EE29072AF089EE154E2DC31 /* BatchOperationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CA742270697FE2600EF1E7 /* BatchOperationsService.swift */; };
 		1C268DB5237F86370CB20D24 /* GoogleDriveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED97D87D5BF6281AF72F466 /* GoogleDriveService.swift */; };
 		1D3E03BCC64A52A469FF1729 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 3F4079735B3FBA9410AD3AA6 /* SQLite */; };
+		2BB65015844C6D09BB42ACAF /* SubscriptionTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690E93DE9E805058E050DF0F /* SubscriptionTier.swift */; };
 		2D62B6CACF8305ADB1800B71 /* EnterpriseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C8348B30BA1E1617339528 /* EnterpriseService.swift */; };
+		324565FC3D3DBD8BD645A9C2 /* PrivacyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B24D1890068F971A706AF78 /* PrivacyService.swift */; };
 		3E0E8F68C722A0E0ECD2FBA1 /* FileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11947DFDFFC7C4250E7E94E8 /* FileListView.swift */; };
+		4C0444721138E711523FE4F2 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664326ED16292D877F1D6858 /* SubscriptionManager.swift */; };
 		5788B71E4454498F08D8F107 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 41474ABB3397AF3F8E0CB5DF /* KeychainAccess */; };
 		5815DE726C4C13B0FE9292A5 /* CollaborationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4797C6E2CE5DCD9CFE3389C4 /* CollaborationService.swift */; };
 		73A300B5094556C8D1124B48 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217BB5D7B7AB09C29E956C82 /* Theme.swift */; };
@@ -42,7 +45,10 @@
 		26D826B699F7297E49E25F3F /* iCloudSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudSyncManager.swift; sourceTree = "<group>"; };
 		3C2FF336F7323A4835E2D6B0 /* Nimbus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nimbus.entitlements; sourceTree = "<group>"; };
 		4797C6E2CE5DCD9CFE3389C4 /* CollaborationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaborationService.swift; sourceTree = "<group>"; };
+		5B24D1890068F971A706AF78 /* PrivacyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyService.swift; sourceTree = "<group>"; };
 		60C8348B30BA1E1617339528 /* EnterpriseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseService.swift; sourceTree = "<group>"; };
+		664326ED16292D877F1D6858 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		690E93DE9E805058E050DF0F /* SubscriptionTier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionTier.swift; sourceTree = "<group>"; };
 		8599DCB59873073B1B6CDAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B6F0C48AEAD198B405C3425 /* ImageClipboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClipboard.swift; sourceTree = "<group>"; };
 		A9DBB69415BFEFE3E1537CAA /* AccessibilityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityExtensions.swift; sourceTree = "<group>"; };
@@ -108,7 +114,9 @@
 				4797C6E2CE5DCD9CFE3389C4 /* CollaborationService.swift */,
 				60C8348B30BA1E1617339528 /* EnterpriseService.swift */,
 				26D826B699F7297E49E25F3F /* iCloudSyncManager.swift */,
+				5B24D1890068F971A706AF78 /* PrivacyService.swift */,
 				FB283021CD589BF70B3E9AFF /* ShortcutsManager.swift */,
+				664326ED16292D877F1D6858 /* SubscriptionManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -133,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				2190D7A1A8842B3AF8DB2378 /* Nimbus.swift */,
+				690E93DE9E805058E050DF0F /* SubscriptionTier.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -216,10 +225,13 @@
 				FB65BA97111733EA1A4EB55D /* ImageClipboard.swift in Sources */,
 				E1210CD66EAC90F1432C3D6B /* Nimbus.swift in Sources */,
 				DE7D96BD838EA5ABDAFE76D5 /* NimbusExport.swift in Sources */,
+				324565FC3D3DBD8BD645A9C2 /* PrivacyService.swift in Sources */,
 				750AF9FDE10F2C6136EB9FDE /* SettingsStore.swift in Sources */,
 				0E558138D5061709340A498F /* ShortcutsManager.swift in Sources */,
 				ADEEFFB6A045390D5ADE3CA6 /* SmartPaste.swift in Sources */,
 				856BA56F6BA44A6FCBA25D3C /* StatusPopoverView.swift in Sources */,
+				4C0444721138E711523FE4F2 /* SubscriptionManager.swift in Sources */,
+				2BB65015844C6D09BB42ACAF /* SubscriptionTier.swift in Sources */,
 				73A300B5094556C8D1124B48 /* Theme.swift in Sources */,
 				9F35703242E960EBCC994B35 /* iCloudSyncManager.swift in Sources */,
 				CCF593FF4CA913044B4AC06A /* main.swift in Sources */,
