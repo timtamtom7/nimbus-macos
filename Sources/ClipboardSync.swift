@@ -15,7 +15,7 @@ final class ClipboardSyncManager {
     private let deviceId: String
 
     private init() {
-        deviceId = UIDevice.current.identifierForVendor?.uuidString ?? UUID().uuidString
+        deviceId = UUID().uuidString
     }
 
     func syncItem(_ content: String, type: String) {

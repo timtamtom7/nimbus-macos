@@ -1,0 +1,199 @@
+{
+  "" : {
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Nimbus-primary.dia",
+    "emit-module-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Nimbus-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Nimbus-primary-emit-module.dia",
+    "pch" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Nimbus-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Nimbus-primary.swiftdeps"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/AccessibilityExtensions.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AccessibilityExtensions.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AccessibilityExtensions.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AccessibilityExtensions.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AccessibilityExtensions.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AccessibilityExtensions.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AccessibilityExtensions.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AccessibilityExtensions.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AccessibilityExtensions~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/AppDelegate.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/ClipboardSync.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ClipboardSync.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ClipboardSync.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ClipboardSync.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ClipboardSync.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ClipboardSync.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ClipboardSync.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ClipboardSync.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ClipboardSync~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/CloudIntelligenceEngine.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/CloudIntelligenceEngine.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/CloudIntelligenceEngine.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/CloudIntelligenceEngine.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/CloudIntelligenceEngine.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/CloudIntelligenceEngine.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/CloudIntelligenceEngine.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/CloudIntelligenceEngine.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/CloudIntelligenceEngine~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/FavoritesManager.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FavoritesManager.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FavoritesManager.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FavoritesManager.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FavoritesManager.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FavoritesManager.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FavoritesManager.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FavoritesManager.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FavoritesManager~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/FileListView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileListView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileListView.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileListView.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileListView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileListView.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileListView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileListView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileListView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/FileSearch.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileSearch.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileSearch.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileSearch.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileSearch.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileSearch.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileSearch.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileSearch.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileSearch~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/GoogleDriveService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/GoogleDriveService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/GoogleDriveService.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/GoogleDriveService.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/GoogleDriveService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/GoogleDriveService.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/GoogleDriveService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/GoogleDriveService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/GoogleDriveService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/ImageClipboard.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ImageClipboard.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ImageClipboard.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ImageClipboard.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ImageClipboard.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ImageClipboard.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ImageClipboard.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ImageClipboard.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ImageClipboard~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/Models/Nimbus.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Nimbus.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Nimbus.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Nimbus.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Nimbus.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Nimbus.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Nimbus.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Nimbus.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Nimbus~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/NimbusExport.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/NimbusExport.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/NimbusExport.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/NimbusExport.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/NimbusExport.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/NimbusExport.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/NimbusExport.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/NimbusExport.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/NimbusExport~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/Services/BatchOperationsService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/BatchOperationsService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/BatchOperationsService.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/BatchOperationsService.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/BatchOperationsService.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/BatchOperationsService.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/BatchOperationsService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/BatchOperationsService.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/BatchOperationsService~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/Services/ShortcutsManager.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ShortcutsManager.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ShortcutsManager.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ShortcutsManager.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ShortcutsManager.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ShortcutsManager.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ShortcutsManager.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ShortcutsManager.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/ShortcutsManager~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/Services/iCloudSyncManager.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/iCloudSyncManager.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/iCloudSyncManager.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/iCloudSyncManager.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/iCloudSyncManager.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/iCloudSyncManager.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/iCloudSyncManager.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/iCloudSyncManager.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/iCloudSyncManager~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/SettingsStore.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/SettingsStore.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/SettingsStore.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/SettingsStore.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/SettingsStore.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/SettingsStore.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/SettingsStore.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/SettingsStore.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/SettingsStore~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/SmartPaste.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/SmartPaste.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/SmartPaste.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/SmartPaste.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/SmartPaste.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/SmartPaste.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/SmartPaste.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/SmartPaste.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/SmartPaste~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/StatusPopoverView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/StatusPopoverView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/StatusPopoverView.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/StatusPopoverView.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/StatusPopoverView.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/StatusPopoverView.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/StatusPopoverView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/StatusPopoverView.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/StatusPopoverView~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/Theme.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Theme.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Theme.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Theme.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Theme.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Theme.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Theme.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Theme.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/Theme~partial.swiftmodule"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/main.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/main.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/main.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/main.dia",
+    "index-unit-output-path" : "/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/main.o",
+    "llvm-bc" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/main.bc",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/main.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/main.swiftdeps",
+    "swiftmodule" : "/Users/mauriello/Dev/nimbus-macos/DerivedData/Build/Intermediates.noindex/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/main~partial.swiftmodule"
+  }
+}

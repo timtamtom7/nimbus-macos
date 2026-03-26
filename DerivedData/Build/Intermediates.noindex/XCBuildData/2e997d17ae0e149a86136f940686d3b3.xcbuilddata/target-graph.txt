@@ -1,0 +1,13 @@
+Target dependency graph (6 targets)
+Target 'Nimbus' in project 'Nimbus'
+➜ Explicit dependency on target 'SQLite' in project 'SQLite.swift'
+➜ Explicit dependency on target 'KeychainAccess' in project 'KeychainAccess'
+Target 'KeychainAccess' in project 'KeychainAccess'
+➜ Explicit dependency on target 'KeychainAccess' in project 'KeychainAccess'
+Target 'KeychainAccess' in project 'KeychainAccess' (no dependencies)
+Target 'SQLite' in project 'SQLite.swift'
+➜ Explicit dependency on target 'SQLite' in project 'SQLite.swift'
+➜ Explicit dependency on target 'SQLite.swift_SQLite' in project 'SQLite.swift'
+Target 'SQLite' in project 'SQLite.swift'
+➜ Explicit dependency on target 'SQLite.swift_SQLite' in project 'SQLite.swift'
+Target 'SQLite.swift_SQLite' in project 'SQLite.swift' (no dependencies)

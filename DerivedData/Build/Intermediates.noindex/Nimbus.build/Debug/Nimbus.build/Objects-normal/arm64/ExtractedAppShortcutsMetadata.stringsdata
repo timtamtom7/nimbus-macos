@@ -1,0 +1,35 @@
+{
+  "source" : "\/Users\/mauriello\/Dev\/nimbus-macos\/Sources\/Services\/ShortcutsManager.swift",
+  "version" : 1,
+  "tables" : {
+    "Localizable" : [
+      {
+        "key" : "Search ${query}"
+      }
+    ],
+    "AppShortcuts" : [
+      {
+        "key" : "Search files in ${applicationName}",
+        "values" : [
+          "Search files in ${applicationName}",
+          "Find file with ${applicationName}"
+        ],
+        "location" : {
+          "startingColumn" : 0,
+          "startingLine" : 7
+        }
+      },
+      {
+        "key" : "Get recent files in ${applicationName}",
+        "values" : [
+          "Get recent files in ${applicationName}",
+          "Recent files in ${applicationName}"
+        ],
+        "location" : {
+          "startingColumn" : 0,
+          "startingLine" : 7
+        }
+      }
+    ]
+  }
+}
