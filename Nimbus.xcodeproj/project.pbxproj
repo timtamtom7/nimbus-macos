@@ -20,6 +20,7 @@
 		8A24FC3E7C3C58C161EE27C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8599DCB59873073B1B6CDAE5 /* AppDelegate.swift */; };
 		9F35703242E960EBCC994B35 /* iCloudSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D826B699F7297E49E25F3F /* iCloudSyncManager.swift */; };
 		CCF593FF4CA913044B4AC06A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD46897E92A3938AC3871E1F /* main.swift */; };
+		AABB00112233445566778899 /* CloudIntelligenceEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB00112233445566778800 /* CloudIntelligenceEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		D2765A4CFF808628E32AA17B /* Nimbus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nimbus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF876259CB7C33684DFF50C3 /* FileSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSearch.swift; sourceTree = "<group>"; };
 		FB283021CD589BF70B3E9AFF /* ShortcutsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsManager.swift; sourceTree = "<group>"; };
+		AABB00112233445566778800 /* CloudIntelligenceEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudIntelligenceEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				CF8390FC5B5A0E3998F208A8 /* SettingsStore.swift */,
 				C7B8C937F10797715C1B3861 /* StatusPopoverView.swift */,
 				217BB5D7B7AB09C29E956C82 /* Theme.swift */,
+				AABB00112233445566778800 /* CloudIntelligenceEngine.swift */,
 				4BB0B58F737813EDE8051A2B /* Services */,
 			);
 			path = Sources;
@@ -171,6 +174,7 @@
 				73A300B5094556C8D1124B48 /* Theme.swift in Sources */,
 				9F35703242E960EBCC994B35 /* iCloudSyncManager.swift in Sources */,
 				CCF593FF4CA913044B4AC06A /* main.swift in Sources */,
+				AABB00112233445566778899 /* CloudIntelligenceEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
