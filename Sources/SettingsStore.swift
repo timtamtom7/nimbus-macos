@@ -1,5 +1,4 @@
 import Foundation
-import SQLite
 
 class SettingsStore: ObservableObject {
 
@@ -9,89 +8,68 @@ class SettingsStore: ObservableObject {
     @Published var downloadPath: String?
     @Published var mountOnLaunch: Bool = true
 
-    private var db: Connection?
-
-    // Table
-    private let settings = Table("settings")
-    private let keyCol = Expression<String>("key")
-    private let valueCol = Expression<String>("value")
+    private var values: [String: String] = [:]
 
     private init() {
-        setupDatabase()
+        loadSettings()
     }
 
-    private func setupDatabase() {
+    private var fileURL: URL {
         let fileManager = FileManager.default
         let appSupport = fileManager.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
         let nimbusDir = appSupport.appendingPathComponent("NIMBUS", isDirectory: true)
-
-        do {
-            try fileManager.createDirectory(at: nimbusDir, withIntermediateDirectories: true)
-            let dbPath = nimbusDir.appendingPathComponent("settings.sqlite3")
-            db = try Connection(dbPath.path)
-
-            try db?.run(settings.create(ifNotExists: true) { t in
-                t.column(keyCol, primaryKey: true)
-                t.column(valueCol)
-            })
-        } catch {
-            print("Database setup failed: \(error)")
-        }
+        try? fileManager.createDirectory(at: nimbusDir, withIntermediateDirectories: true)
+        return nimbusDir.appendingPathComponent("settings.json")
     }
 
     func loadSettings() {
-        guard let db = db else { return }
-
-        do {
-            for row in try db.prepare(settings) {
-                let key = row[keyCol]
-                let value = row[valueCol]
-
-                switch key {
-                case "lastFolderID":
-                    lastFolderID = value
-                case "downloadPath":
-                    downloadPath = value
-                case "mountOnLaunch":
-                    mountOnLaunch = value == "true"
-                default:
-                    break
-                }
-            }
-        } catch {
-            print("Failed to load settings: \(error)")
+        if let data = try? Data(contentsOf: fileURL),
+           let decoded = try? JSONDecoder().decode([String: String].self, from: data) {
+            values = decoded
         }
+
+        lastFolderID = values["lastFolderID"]
+        downloadPath = values["downloadPath"]
+        mountOnLaunch = values["mountOnLaunch"] != "false"
     }
 
     func saveSetting(key: String, value: String) {
-        guard let db = db else { return }
-
-        do {
-            try db.run(settings.insert(or: .replace,
-                keyCol <- key,
-                valueCol <- value
-            ))
-        } catch {
-            print("Failed to save setting: \(error)")
-        }
+        values[key] = value
+        persist()
     }
 
     func setLastFolderID(_ id: String?) {
         lastFolderID = id
-        if let id = id {
-            saveSetting(key: "lastFolderID", value: id)
+        if let id {
+            values["lastFolderID"] = id
+        } else {
+            values.removeValue(forKey: "lastFolderID")
         }
+        persist()
     }
 
     func setDownloadPath(_ path: String?) {
         downloadPath = path
-        if let path = path {
-            saveSetting(key: "downloadPath", value: path)
+        if let path {
+            values["downloadPath"] = path
+        } else {
+            values.removeValue(forKey: "downloadPath")
         }
+        persist()
     }
 
     func setMountOnLaunch(_ enabled: Bool) {
         mountOnLaunch = enabled
-        saveSetting(key: "mountOnLaunch", value: enabled ? "true" : "false")
+        values["mountOnLaunch"] = enabled ? "true" : "false"
+        persist()
+    }
+
+    private func persist() {
+        do {
+            let data = try JSONEncoder().encode(values)
+            try data.write(to: fileURL, options: .atomic)
+        } catch {
+            print("Failed to persist settings: \(error)")
+        }
     }
 }

@@ -13,6 +13,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private var cancellables = Set<AnyCancellable>()
 
     func applicationDidFinishLaunching(_ notification: Notification) {
+        _ = NimbusCollaborationService.shared
+        _ = NimbusEnterpriseService.shared
+        _ = NimbusiOSService.shared
+        NimbusAPIService.shared.start()
+
         setupStatusItem()
         setupPopover()
         setupEventMonitor()
@@ -21,6 +26,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(_ notification: Notification) {
+        NimbusAPIService.shared.stop()
         if let monitor = eventMonitor {
             NSEvent.removeMonitor(monitor)
         }
@@ -121,4 +127,3 @@ final class NimbusState {
         return Array(recentFiles.prefix(limit))
     }
 }
-

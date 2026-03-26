@@ -54,15 +54,4 @@ targets:
         com.apple.security.files.user-selected.read-write: true
         keychain-access-groups:
           - $(AppIdentifierPrefix)com.nimbus.macos
-    dependencies:
-      - package: SQLite.swift
-        product: SQLite
-      - package: KeychainAccess
-
-packages:
-  SQLite.swift:
-    url: https://github.com/stephencelis/SQLite.swift
-    from: "0.14.1"
-  KeychainAccess:
-    url: https://github.com/kishikawakatsumi/KeychainAccess
-    from: "4.2.2"
+    dependencies: []

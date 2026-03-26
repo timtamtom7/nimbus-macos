@@ -1,7 +1,7 @@
 import Foundation
 import AppKit
-import KeychainAccess
 import Combine
+import Security
 
 // MARK: - Models
 
@@ -123,7 +123,7 @@ class GoogleDriveService: ObservableObject {
     @Published var error: String?
     @Published var quota: DriveQuota?
 
-    private let keychain = Keychain(service: "com.nimbus.macos")
+    private let keychainService = "com.nimbus.macos"
     private let clientID = "YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com"
     private let redirectURI = "com.nimbus.macos:/oauth2callback"
     private let tokenURL = URL(string: "https://oauth2.googleapis.com/token")!
@@ -131,39 +131,80 @@ class GoogleDriveService: ObservableObject {
     private let authURL = URL(string: "https://accounts.google.com/o/oauth2/v2/auth")!
 
     private var accessToken: String? {
-        get { try? keychain.get("accessToken") }
+        get { keychainValue(for: "accessToken") }
         set {
             if let v = newValue {
-                try? keychain.set(v, key: "accessToken")
+                setKeychainValue(v, for: "accessToken")
             } else {
-                try? keychain.remove("accessToken")
+                removeKeychainValue(for: "accessToken")
             }
         }
     }
 
     private var refreshToken: String? {
-        get { try? keychain.get("refreshToken") }
+        get { keychainValue(for: "refreshToken") }
         set {
             if let v = newValue {
-                try? keychain.set(v, key: "refreshToken")
+                setKeychainValue(v, for: "refreshToken")
             } else {
-                try? keychain.remove("refreshToken")
+                removeKeychainValue(for: "refreshToken")
             }
         }
     }
 
     private var tokenExpiry: Date? {
         get {
-            guard let s = try? keychain.get("tokenExpiry") else { return nil }
+            guard let s = keychainValue(for: "tokenExpiry") else { return nil }
             return ISO8601DateFormatter().date(from: s)
         }
         set {
             if let v = newValue {
-                try? keychain.set(ISO8601DateFormatter().string(from: v), key: "tokenExpiry")
+                setKeychainValue(ISO8601DateFormatter().string(from: v), for: "tokenExpiry")
             } else {
-                try? keychain.remove("tokenExpiry")
+                removeKeychainValue(for: "tokenExpiry")
             }
         }
+    }
+
+    private func keychainValue(for account: String) -> String? {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: keychainService,
+            kSecAttrAccount as String: account,
+            kSecReturnData as String: true,
+            kSecMatchLimit as String: kSecMatchLimitOne
+        ]
+        var result: CFTypeRef?
+        guard SecItemCopyMatching(query as CFDictionary, &result) == errSecSuccess,
+              let data = result as? Data else {
+            return nil
+        }
+        return String(data: data, encoding: .utf8)
+    }
+
+    private func setKeychainValue(_ value: String, for account: String) {
+        let data = Data(value.utf8)
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: keychainService,
+            kSecAttrAccount as String: account
+        ]
+        let attributes = [kSecValueData as String: data]
+        let status = SecItemUpdate(query as CFDictionary, attributes as CFDictionary)
+        if status == errSecItemNotFound {
+            var insert = query
+            insert[kSecValueData as String] = data
+            SecItemAdd(insert as CFDictionary, nil)
+        }
+    }
+
+    private func removeKeychainValue(for account: String) {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrService as String: keychainService,
+            kSecAttrAccount as String: account
+        ]
+        SecItemDelete(query as CFDictionary)
     }
 
     private init() {
