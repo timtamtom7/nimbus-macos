@@ -11,13 +11,11 @@
 		0E558138D5061709340A498F /* ShortcutsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB283021CD589BF70B3E9AFF /* ShortcutsManager.swift */; };
 		0EE29072AF089EE154E2DC31 /* BatchOperationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CA742270697FE2600EF1E7 /* BatchOperationsService.swift */; };
 		1C268DB5237F86370CB20D24 /* GoogleDriveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED97D87D5BF6281AF72F466 /* GoogleDriveService.swift */; };
-		1D3E03BCC64A52A469FF1729 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 3F4079735B3FBA9410AD3AA6 /* SQLite */; };
 		2BB65015844C6D09BB42ACAF /* SubscriptionTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690E93DE9E805058E050DF0F /* SubscriptionTier.swift */; };
 		2D62B6CACF8305ADB1800B71 /* EnterpriseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C8348B30BA1E1617339528 /* EnterpriseService.swift */; };
 		324565FC3D3DBD8BD645A9C2 /* PrivacyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B24D1890068F971A706AF78 /* PrivacyService.swift */; };
 		3E0E8F68C722A0E0ECD2FBA1 /* FileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11947DFDFFC7C4250E7E94E8 /* FileListView.swift */; };
 		4C0444721138E711523FE4F2 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664326ED16292D877F1D6858 /* SubscriptionManager.swift */; };
-		5788B71E4454498F08D8F107 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 41474ABB3397AF3F8E0CB5DF /* KeychainAccess */; };
 		5815DE726C4C13B0FE9292A5 /* CollaborationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4797C6E2CE5DCD9CFE3389C4 /* CollaborationService.swift */; };
 		73A300B5094556C8D1124B48 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217BB5D7B7AB09C29E956C82 /* Theme.swift */; };
 		750AF9FDE10F2C6136EB9FDE /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8390FC5B5A0E3998F208A8 /* SettingsStore.swift */; };
@@ -66,18 +64,6 @@
 		EF876259CB7C33684DFF50C3 /* FileSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSearch.swift; sourceTree = "<group>"; };
 		FB283021CD589BF70B3E9AFF /* ShortcutsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		9C29D553CA5F0AC84E9E2A15 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1D3E03BCC64A52A469FF1729 /* SQLite in Frameworks */,
-				5788B71E4454498F08D8F107 /* KeychainAccess in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4A1CE444F092636AE23A9A51 /* Sources */ = {
@@ -154,17 +140,12 @@
 			buildConfigurationList = 164050DC562408782FC3BA6F /* Build configuration list for PBXNativeTarget "Nimbus" */;
 			buildPhases = (
 				311F88A6D56E5E5C82F45D87 /* Sources */,
-				9C29D553CA5F0AC84E9E2A15 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Nimbus;
-			packageProductDependencies = (
-				3F4079735B3FBA9410AD3AA6 /* SQLite */,
-				41474ABB3397AF3F8E0CB5DF /* KeychainAccess */,
-			);
 			productName = Nimbus;
 			productReference = D2765A4CFF808628E32AA17B /* Nimbus.app */;
 			productType = "com.apple.product-type.application";
@@ -193,10 +174,6 @@
 				en,
 			);
 			mainGroup = 617866E59968FDC96CC1252C;
-			packageReferences = (
-				2A0C3FD33A1AA6700994C84F /* XCRemoteSwiftPackageReference "KeychainAccess" */,
-				68CB6C68BB2BD702FD0F29D6 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
-			);
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -420,38 +397,6 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		2A0C3FD33A1AA6700994C84F /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.2.2;
-			};
-		};
-		68CB6C68BB2BD702FD0F29D6 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.14.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		3F4079735B3FBA9410AD3AA6 /* SQLite */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 68CB6C68BB2BD702FD0F29D6 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
-			productName = SQLite;
-		};
-		41474ABB3397AF3F8E0CB5DF /* KeychainAccess */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2A0C3FD33A1AA6700994C84F /* XCRemoteSwiftPackageReference "KeychainAccess" */;
-			productName = KeychainAccess;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8C576984C911ED78965BA1A9 /* Project object */;
 }

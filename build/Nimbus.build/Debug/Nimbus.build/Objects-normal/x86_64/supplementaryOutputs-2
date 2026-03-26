@@ -1,0 +1,23 @@
+{
+  "/Users/mauriello/Dev/nimbus-macos/Sources/ClipboardSync.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/ClipboardSync.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/ClipboardSync.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/ClipboardSync.dia",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/ClipboardSync.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/ClipboardSync.swiftdeps"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/CloudIntelligenceEngine.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/CloudIntelligenceEngine.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/CloudIntelligenceEngine.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/CloudIntelligenceEngine.dia",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/CloudIntelligenceEngine.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/CloudIntelligenceEngine.swiftdeps"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/Services/BatchOperationsService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/BatchOperationsService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/BatchOperationsService.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/BatchOperationsService.dia",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/BatchOperationsService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/BatchOperationsService.swiftdeps"
+  }
+}

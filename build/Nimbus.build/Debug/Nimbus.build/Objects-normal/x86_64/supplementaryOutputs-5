@@ -1,0 +1,23 @@
+{
+  "/Users/mauriello/Dev/nimbus-macos/Sources/ImageClipboard.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/ImageClipboard.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/ImageClipboard.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/ImageClipboard.dia",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/ImageClipboard.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/ImageClipboard.swiftdeps"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/Models/Nimbus.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/Nimbus.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/Nimbus.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/Nimbus.dia",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/Nimbus.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/Nimbus.swiftdeps"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/NimbusExport.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/NimbusExport.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/NimbusExport.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/NimbusExport.dia",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/NimbusExport.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/NimbusExport.swiftdeps"
+  }
+}

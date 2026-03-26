@@ -1,0 +1,23 @@
+{
+  "/Users/mauriello/Dev/nimbus-macos/Sources/AccessibilityExtensions.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AccessibilityExtensions.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AccessibilityExtensions.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AccessibilityExtensions.dia",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AccessibilityExtensions.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AccessibilityExtensions.swiftdeps"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/AppDelegate.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AppDelegate.dia",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/AppDelegate.swiftdeps"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/Services/APIService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/APIService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/APIService.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/APIService.dia",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/APIService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/APIService.swiftdeps"
+  }
+}

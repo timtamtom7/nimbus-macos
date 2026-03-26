@@ -1,0 +1,23 @@
+{
+  "/Users/mauriello/Dev/nimbus-macos/Sources/FavoritesManager.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/FavoritesManager.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/FavoritesManager.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/FavoritesManager.dia",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/FavoritesManager.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/FavoritesManager.swiftdeps"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/Services/CollaborationService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/CollaborationService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/CollaborationService.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/CollaborationService.dia",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/CollaborationService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/CollaborationService.swiftdeps"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/Services/EnterpriseService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/EnterpriseService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/EnterpriseService.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/EnterpriseService.dia",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/EnterpriseService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/x86_64/EnterpriseService.swiftdeps"
+  }
+}

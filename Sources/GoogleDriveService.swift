@@ -236,7 +236,8 @@ class GoogleDriveService: ObservableObject {
             URLQueryItem(name: "prompt", value: "consent")
         ]
 
-        NSWorkspace.shared.open(components.url!)
+        guard let authPageURL = components.url else { return }
+        NSWorkspace.shared.open(authPageURL)
         setupOAuthCallback()
     }
 
@@ -402,7 +403,11 @@ class GoogleDriveService: ObservableObject {
         urlComponents.queryItems = queryItems
 
         do {
-            let (data, _) = try await URLSession.shared.data(for: authorizedRequest(for: urlComponents.url!))
+            guard let listURL = urlComponents.url else {
+                await MainActor.run { self.error = "Failed to build file list URL" }
+                return
+            }
+            let (data, _) = try await URLSession.shared.data(for: authorizedRequest(for: listURL))
             let response = try JSONDecoder().decode(FileListResponse.self, from: data)
             let driveFiles = response.files.map { DriveFile(from: $0) }
             await MainActor.run {
@@ -458,7 +463,9 @@ class GoogleDriveService: ObservableObject {
     }
 
     func downloadToLocal(_ file: DriveFile) async throws -> URL {
-        let downloadsDir = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first!
+        guard let downloadsDir = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first else {
+            throw DriveError.downloadFailed
+        }
         let nimbusDir = downloadsDir.appendingPathComponent("NIMBUS", isDirectory: true)
 
         let fileManager = FileManager.default
@@ -504,7 +511,10 @@ class GoogleDriveService: ObservableObject {
         let metadata = ["parents": [toFolderId]]
         let body = try JSONEncoder().encode(metadata)
 
-        var request = URLRequest(url: URL(string: "https://www.googleapis.com/drive/v3/files/\(fileId)?addParents=\(toFolderId)")!)
+        guard let moveURL = URL(string: "https://www.googleapis.com/drive/v3/files/\(fileId)?addParents=\(toFolderId)") else {
+            throw DriveError.downloadFailed
+        }
+        var request = URLRequest(url: moveURL)
         request.httpMethod = "PATCH"
         request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -522,7 +532,10 @@ class GoogleDriveService: ObservableObject {
         let metadata = GoogleDriveFile(name: "", mimeType: "", parents: [toFolderId])
         let body = try JSONEncoder().encode(metadata)
 
-        var request = URLRequest(url: URL(string: "https://www.googleapis.com/drive/v3/files/\(fileId)/copy")!)
+        guard let copyURL = URL(string: "https://www.googleapis.com/drive/v3/files/\(fileId)/copy") else {
+            throw DriveError.downloadFailed
+        }
+        var request = URLRequest(url: copyURL)
         request.httpMethod = "POST"
         request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -536,8 +549,10 @@ class GoogleDriveService: ObservableObject {
 
     func deleteFile(fileId: String) async throws {
         guard let accessToken = accessToken else { throw DriveError.notAuthenticated }
-
-        var request = URLRequest(url: URL(string: "https://www.googleapis.com/drive/v3/files/\(fileId)")!)
+        guard let deleteURL = URL(string: "https://www.googleapis.com/drive/v3/files/\(fileId)") else {
+            throw DriveError.downloadFailed
+        }
+        var request = URLRequest(url: deleteURL)
         request.httpMethod = "DELETE"
         request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
 
@@ -553,7 +568,10 @@ class GoogleDriveService: ObservableObject {
         let metadata = GoogleDriveFile(name: newName, mimeType: "")
         let body = try JSONEncoder().encode(metadata)
 
-        var request = URLRequest(url: URL(string: "https://www.googleapis.com/drive/v3/files/\(fileId)")!)
+        guard let renameURL = URL(string: "https://www.googleapis.com/drive/v3/files/\(fileId)") else {
+            throw DriveError.downloadFailed
+        }
+        var request = URLRequest(url: renameURL)
         request.httpMethod = "PATCH"
         request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -571,7 +589,10 @@ class GoogleDriveService: ObservableObject {
         let metadata = GoogleDriveFile(name: "", mimeType: "", starred: starred)
         let body = try JSONEncoder().encode(metadata)
 
-        var request = URLRequest(url: URL(string: "https://www.googleapis.com/drive/v3/files/\(fileId)")!)
+        guard let starURL = URL(string: "https://www.googleapis.com/drive/v3/files/\(fileId)") else {
+            throw DriveError.downloadFailed
+        }
+        var request = URLRequest(url: starURL)
         request.httpMethod = "PATCH"
         request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")

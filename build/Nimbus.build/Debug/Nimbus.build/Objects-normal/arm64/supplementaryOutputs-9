@@ -1,0 +1,23 @@
+{
+  "/Users/mauriello/Dev/nimbus-macos/Sources/FileListView.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileListView.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileListView.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileListView.dia",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileListView.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileListView.swiftdeps"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/FileSearch.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileSearch.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileSearch.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileSearch.dia",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileSearch.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/FileSearch.swiftdeps"
+  },
+  "/Users/mauriello/Dev/nimbus-macos/Sources/GoogleDriveService.swift" : {
+    "const-values" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/GoogleDriveService.swiftconstvalues",
+    "dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/GoogleDriveService.d",
+    "diagnostics" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/GoogleDriveService.dia",
+    "object" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/GoogleDriveService.o",
+    "swift-dependencies" : "/Users/mauriello/Dev/nimbus-macos/build/Nimbus.build/Debug/Nimbus.build/Objects-normal/arm64/GoogleDriveService.swiftdeps"
+  }
+}
