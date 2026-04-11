@@ -87,7 +87,7 @@ struct MainBrowserView: View {
                 Task { await driveService.listFiles() }
             }
         }
-        .onChange(of: errorMessage) { _, newValue in
+        .onChange(of: errorMessage) { newValue in
             showError = newValue != nil
         }
         .alert("Error", isPresented: $showError) {
