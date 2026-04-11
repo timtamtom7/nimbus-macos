@@ -31,6 +31,11 @@ struct Theme {
     static let fontSizeMedium: CGFloat = 13
     static let fontSizeLarge: CGFloat = 15
 
+    // MARK: - Icon Sizes
+
+    static let iconSize: CGFloat = 16
+    static let iconSizeLarge: CGFloat = 18
+
     // MARK: - Shadows
 
     static let shadowRadius: CGFloat = 4

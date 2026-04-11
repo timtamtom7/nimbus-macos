@@ -6,6 +6,7 @@ struct MainBrowserView: View {
     @ObservedObject var driveService: GoogleDriveService
     @State private var selectedFile: DriveFile?
     @State private var errorMessage: String?
+    @State private var showError = false
 
     var body: some View {
         VStack(spacing: 0) {
@@ -86,11 +87,15 @@ struct MainBrowserView: View {
                 Task { await driveService.listFiles() }
             }
         }
-        .alert("Error", isPresented: .constant(errorMessage != nil)) {
+        .onChange(of: errorMessage) { _, newValue in
+            showError = newValue != nil
+        }
+        .alert("Error", isPresented: $showError) {
             Button("OK") { errorMessage = nil }
         } message: {
             Text(errorMessage ?? "")
         }
+        .accessibilityLabel("File browser view")
     }
 
     private func downloadFile(_ file: DriveFile) {
@@ -114,6 +119,7 @@ struct MainBrowserView: View {
                 do {
                     let url = try await driveService.downloadToLocal(file)
                     await MainActor.run {
+                        NSApp.activate(ignoringOtherApps: true)
                         let panel = QLPreviewPanel.shared()
                         panel?.makeKeyAndOrderFront(nil)
                     }
@@ -143,14 +149,17 @@ struct BrowserToolbar: View {
                 Image(systemName: "chevron.left")
             }
             .disabled(!canGoBack)
+            .accessibilityLabel("Navigate back")
 
             Button(action: onHome) {
                 Image(systemName: "house")
             }
+            .accessibilityLabel("Go to home folder")
 
             Button(action: onRefresh) {
                 Image(systemName: "arrow.clockwise")
             }
+            .accessibilityLabel("Refresh file list")
 
             Divider()
                 .frame(height: 20)
@@ -175,7 +184,7 @@ struct BreadcrumbView: View {
         HStack(spacing: 2) {
             Text("Root")
                 .font(.caption)
-                .foregroundColor(path.isEmpty ? .primary : .blue)
+                .foregroundColor(path.isEmpty ? .primary : Theme.primary)
 
             ForEach(Array(path.enumerated()), id: \.element.id) { index, folder in
                 Image(systemName: "chevron.right")
@@ -183,7 +192,7 @@ struct BreadcrumbView: View {
                     .foregroundColor(.secondary)
                 Text(folder.name)
                     .font(.caption)
-                    .foregroundColor(index == path.count - 1 ? .primary : .blue)
+                    .foregroundColor(index == path.count - 1 ? .primary : Theme.primary)
             }
         }
     }
@@ -231,7 +240,9 @@ struct FileRowView: View {
         HStack(spacing: Theme.spacingS) {
             Image(nsImage: file.icon)
                 .resizable()
+                .aspectRatio(contentMode: .fit)
                 .frame(width: 20, height: 20)
+                .accessibilityLabel(file.isFolder ? "Folder icon" : "File icon: \(file.formattedSize)")
 
             VStack(alignment: .leading, spacing: 2) {
                 Text(file.name)
@@ -248,18 +259,18 @@ struct FileRowView: View {
                         Text((file.name as NSString).pathExtension.uppercased())
                             .font(.caption2)
                             .foregroundColor(.secondary)
-                            .padding(.horizontal, 4)
-                            .padding(.vertical, 1)
+                            .padding(.horizontal, Theme.spacingXS)
+                            .padding(.vertical, 2)
                             .background(Color.secondary.opacity(0.2))
-                            .cornerRadius(2)
+                            .cornerRadius(Theme.cornerRadiusSmall)
                     } else {
                         Text("Folder")
                             .font(.caption2)
                             .foregroundColor(.secondary)
-                            .padding(.horizontal, 4)
-                            .padding(.vertical, 1)
-                            .background(Color.blue.opacity(0.2))
-                            .cornerRadius(2)
+                            .padding(.horizontal, Theme.spacingXS)
+                            .padding(.vertical, 2)
+                            .background(Theme.primary.opacity(0.2))
+                            .cornerRadius(Theme.cornerRadiusSmall)
                     }
                 }
             }

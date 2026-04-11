@@ -28,12 +28,12 @@ final class ClipboardSyncManager {
         )
 
         var items = fetchItems()
-        items.append(item)
-
+        // Prepend to keep newest first
+        items.insert(item, at: 0)
+        // Trim to max size
         if items.count > 100 {
-            items = Array(items.suffix(100))
+            items = Array(items.prefix(100))
         }
-
         saveItems(items)
     }
 

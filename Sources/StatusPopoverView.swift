@@ -134,8 +134,8 @@ struct QuickAccessTab: View {
         Button(action: action) {
             VStack(spacing: 4) {
                 Image(systemName: icon)
-                    .font(.system(size: 18))
-                    .foregroundColor(.blue)
+                    .font(.system(size: Theme.iconSize))
+                    .foregroundColor(Theme.primary)
                 Text(label)
                     .font(.system(size: 10))
                     .foregroundColor(.secondary)
@@ -143,9 +143,10 @@ struct QuickAccessTab: View {
             .frame(maxWidth: .infinity)
             .padding(.vertical, 8)
             .background(Color(nsColor: NSColor.controlBackgroundColor))
-            .cornerRadius(8)
+            .cornerRadius(Theme.cornerRadius)
         }
         .buttonStyle(.plain)
+        .accessibilityLabel(label)
     }
 }
 
@@ -160,7 +161,9 @@ struct QuickFileRowView: View {
         HStack(spacing: 8) {
             Image(nsImage: file.icon)
                 .resizable()
+                .aspectRatio(contentMode: .fit)
                 .frame(width: 20, height: 20)
+                .accessibilityLabel(file.isFolder ? "Folder" : "File")
 
             VStack(alignment: .leading, spacing: 1) {
                 Text(file.name)
@@ -181,20 +184,22 @@ struct QuickFileRowView: View {
                     .foregroundColor(isFavorite ? .yellow : .secondary)
             }
             .buttonStyle(.plain)
+            .accessibilityLabel(isFavorite ? "Remove from favorites" : "Add to favorites")
 
             if !file.isFolder {
                 Button(action: { downloadManager.download(file) }) {
                     Image(systemName: "arrow.down.circle")
                         .font(.system(size: 13))
-                        .foregroundColor(.blue)
+                        .foregroundColor(Theme.primary)
                 }
                 .buttonStyle(.plain)
+                .accessibilityLabel("Download \(file.name)")
             }
         }
         .padding(.horizontal, 8)
         .padding(.vertical, 6)
         .background(Color(nsColor: NSColor.controlBackgroundColor))
-        .cornerRadius(6)
+        .cornerRadius(Theme.cornerRadius)
         .onTapGesture(count: 2) {
             // Open file
         }

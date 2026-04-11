@@ -16,6 +16,10 @@ final class FavoritesManager {
     private init() {}
 
     func addFavorite(content: String, type: String, label: String) {
+        var favorites = fetchFavorites()
+        // Guard against duplicates
+        guard !favorites.contains(where: { $0.content == content }) else { return }
+
         let item = FavoriteItem(
             id: UUID(),
             content: content,
@@ -24,7 +28,6 @@ final class FavoritesManager {
             createdAt: Date()
         )
 
-        var favorites = fetchFavorites()
         favorites.append(item)
         saveFavorites(favorites)
     }

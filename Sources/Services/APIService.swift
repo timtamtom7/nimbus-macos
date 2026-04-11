@@ -38,7 +38,12 @@ final class NimbusAPIService: ObservableObject {
         conn.receive(minimumIncompleteLength: 1, maximumLength: 65536) { [weak self] data, _, _, _ in
             guard let data = data, let req = String(data: data, encoding: .utf8) else { conn.cancel(); return }
             let resp = self?.route(req) ?? NimbusHTTPResp(code: 404, body: #"{"error":"Not found"}"#)
-            let http = "HTTP/1.1 \(resp.code)\r\nContent-Type: application/json\r\nContent-Length: \(resp.body.count)\r\n\r\n\(resp.body)"
+            let headers = [
+                "Content-Type: application/json",
+                "Content-Length: \(resp.body.count)",
+                "Connection: close"
+            ].joined(separator: "\r\n")
+            let http = "HTTP/1.1 \(resp.code)\r\n\(headers)\r\n\r\n\(resp.body)"
             conn.send(content: http.data(using: .utf8), completion: .contentProcessed { _ in conn.cancel() })
         }
     }

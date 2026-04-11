@@ -6,6 +6,8 @@ import Security
 // MARK: - Models
 
 struct DriveFile: Identifiable, Codable, Hashable {
+    private static let isoFormatter = ISO8601DateFormatter()
+
     let id: String
     let name: String
     let mimeType: String
@@ -22,8 +24,8 @@ struct DriveFile: Identifiable, Codable, Hashable {
         self.name = file.name
         self.mimeType = file.mimeType
         self.size = file.size
-        self.modifiedTime = ISO8601DateFormatter().date(from: file.modifiedTime ?? "")
-        self.createdTime = ISO8601DateFormatter().date(from: file.createdTime ?? "")
+        self.modifiedTime = Self.isoFormatter.date(from: file.modifiedTime ?? "")
+        self.createdTime = Self.isoFormatter.date(from: file.createdTime ?? "")
         self.parents = file.parents
         self.webContentLink = file.webContentLink
         self.webViewLink = file.webViewLink
@@ -114,6 +116,7 @@ struct DriveQuota: Codable {
 class GoogleDriveService: ObservableObject {
 
     static let shared = GoogleDriveService()
+    private static let isoFormatter = ISO8601DateFormatter()
 
     @Published var isAuthenticated = false
     @Published var currentUser: DriveUser?
@@ -155,11 +158,11 @@ class GoogleDriveService: ObservableObject {
     private var tokenExpiry: Date? {
         get {
             guard let s = keychainValue(for: "tokenExpiry") else { return nil }
-            return ISO8601DateFormatter().date(from: s)
+            return Self.isoFormatter.date(from: s)
         }
         set {
             if let v = newValue {
-                setKeychainValue(ISO8601DateFormatter().string(from: v), for: "tokenExpiry")
+                setKeychainValue(Self.isoFormatter.string(from: v), for: "tokenExpiry")
             } else {
                 removeKeychainValue(for: "tokenExpiry")
             }
